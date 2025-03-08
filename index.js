@@ -42,4 +42,5 @@ class Question {
 
 async function main() {
     
+    console.clear();
 }
