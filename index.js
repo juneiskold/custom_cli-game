@@ -52,5 +52,29 @@ async function main() {
         "💻 Is HTML a language?",
         ["Yes", "No"],
         1,
-    )
+    );
+
+    const question2 = new Question(
+        "📅 When was JavaScript Created?",
+        ["1940", "2003", "1995", "2010"],
+        2,
+    );
+
+    const question3 = new Question(
+        "🤝 What is the most popular programming language?",
+        ["Python", "JavaScript", "Java", "C"],
+        1,
+    );
+
+    const question4 = new Question(
+        "🌎 How many programmers are there in the world?",
+        ["20 million", "17 million", "12 million", "26 million"],
+        3,
+    );
+
+    const question5 = new Question(
+        "🐐 Who is the best coding YouTuber?",
+        ["FireShip", "Traversy Media", "Web Dev Simplified", "CodeStackr"],
+        0,
+    );
 }
