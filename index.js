@@ -80,5 +80,19 @@ async function main() {
 
     const allQuestions = [question1, question2, question3, question4, question5];
 
+    const readyToPlay = await p.select({
+        message: "No cheating. 5 questions. Results at the end. Ready to play?",
+        initialValue: "Yes",
+        options: [
+            {
+                value: "Yes", label: "Yes"
+            },
+
+            {
+                value: "No", label: "No"
+            }
+        ],
+    });
+
     
 }
