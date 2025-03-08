@@ -121,3 +121,5 @@ async function main() {
         p.outro(`${color.bgCyan(color.black('Thank you for playing the Bonolo Games 🚀🚀🚀'))}`);
     }
 }
+
+main().catch(console.error);
