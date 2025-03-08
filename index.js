@@ -102,6 +102,12 @@ async function main() {
 
         p.outro(`${color.bgRed(color.black(`You got ${color.bold(correctTotal)} questions correct!`))}`);
 
-        
+        if (correctTotal === 5) {
+            const s = p.spinner();
+            s.start("Generating girft card code...");
+            await setTimeout(5000);
+            s.stop();
+            p.outro(`${color.bgWhite(color.black(`Code: XR7WLY7JG5LW7CQM ${color.bold("")}`))}`);
+        }
     }
 }
