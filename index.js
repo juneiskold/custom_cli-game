@@ -39,3 +39,7 @@ class Question {
         this.correctAnswerIndex = correctAnswerIndex;
     }
 }
+
+async function main() {
+    
+}
