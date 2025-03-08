@@ -30,3 +30,7 @@ async function askQuestions(question, answers, correctAnswerIndex) {
         correctTotal ++;
     }
 }
+
+class Question {
+    
+}
