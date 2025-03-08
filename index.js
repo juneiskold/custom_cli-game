@@ -10,4 +10,8 @@ let  correctTotal = 0;
 
 async function askQuestions(questions, answers, correctAnswerIndex) {
     
+    const options = []
+    answers.forEach((answer) => {
+        options.push({value: answer, label: answer})
+    });
 }
