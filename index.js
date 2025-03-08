@@ -115,7 +115,9 @@ async function main() {
             await setTimeout(3000);
             s.stop();
             p.outro(`${color.bgRed(color.black(`You need 5 correct answers to get the code 🤫`))}`);
-            
+
         }
+    } else {
+        p.outro(`${color.bgCyan(color.black('Thank you for playing the Bonolo Games 🚀🚀🚀'))}`);
     }
 }
