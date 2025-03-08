@@ -45,4 +45,6 @@ async function main() {
     console.clear();
 
     await setTimeout(1000);
+
+    p.intro(`${color.bgRed(color.black(`Welcome to the ${color.bold(`Bonolo's Games`)} 🚀🚀🚀`))}`)
 }
