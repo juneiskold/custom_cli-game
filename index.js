@@ -8,7 +8,7 @@ import color from 'picocolors';
 
 let  correctTotal = 0;
 
-async function askQuestions(question, answers, correctAnswerIndex) {
+async function askQuestion(question, answers, correctAnswerIndex) {
     
     const options = []
     answers.forEach((answer) => {
@@ -97,7 +97,7 @@ async function main() {
     if (readyToPlay === "Yes") {
         
         for (const question of allQuestions) {
-            await askQuestions(question.question, question.answers, question.correctAnswerIndex);
+            await askQuestion(question.question, question.answers, question.correctAnswerIndex);
         }
 
         p.outro(`${color.bgRed(color.black(`You got ${color.bold(correctTotal)} questions correct!`))}`);
