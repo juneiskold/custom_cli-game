@@ -20,4 +20,13 @@ async function askQuestions(question, answers, correctAnswerIndex) {
         initialValue: '1',
         options: options,
     });
+
+    const s = p.spinner();
+    s.start();
+    await setTimeout(1000);
+    s.stop();
+
+    if (answer === answers[correctAnswerIndex]) {
+        correctTotal ++;
+    }
 }
