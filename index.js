@@ -94,5 +94,10 @@ async function main() {
         ],
     });
 
-    
+    if (readyToPlay === "Yes") {
+        
+        for (const question of allQuestions) {
+            await askQuestions(question.question, question.answers, question.correctAnswerIndex);
+        }
+    }
 }
