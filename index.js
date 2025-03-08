@@ -5,3 +5,9 @@ import * as p from '@clack/prompts';
 import { setTimeout } from 'timers/promises';
 import color from 'picocolors';
 
+
+let  correctTotal = 0;
+
+async function askQuestions(questions, answers, correctAnswerIndex) {
+    
+}
