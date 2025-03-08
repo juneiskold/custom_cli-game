@@ -32,5 +32,10 @@ async function askQuestions(question, answers, correctAnswerIndex) {
 }
 
 class Question {
-    
+
+    constructor(question, answersArray, correctAnswerIndex) {
+        this.question = question;
+        this.answers = this.answers;
+        this.correctAnswerIndex = correctAnswerIndex;
+    }
 }
