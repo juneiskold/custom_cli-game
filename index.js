@@ -46,5 +46,11 @@ async function main() {
 
     await setTimeout(1000);
 
-    p.intro(`${color.bgRed(color.black(`Welcome to the ${color.bold(`Bonolo's Games`)} 🚀🚀🚀`))}`)
+    p.intro(`${color.bgRed(color.black(`Welcome to the ${color.bold(`Bonolo's Games`)} 🚀🚀🚀`))}`);
+
+    const question1 = new Question(
+        "💻 Is HTML a language?",
+        ["Yes", "No"],
+        1,
+    )
 }
