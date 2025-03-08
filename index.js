@@ -12,7 +12,7 @@ async function askQuestion(question, answers, correctAnswerIndex) {
     
     const options = []
     answers.forEach((answer) => {
-        options.push({value: answer, label: answer})
+        options.push({ value: answer, label: answer })
     });
 
     const answer = await p.select({
@@ -35,7 +35,7 @@ class Question {
 
     constructor(question, answersArray, correctAnswerIndex) {
         this.question = question;
-        this.answers = this.answers;
+        this.answers = answersArray;
         this.correctAnswerIndex = correctAnswerIndex;
     }
 }
