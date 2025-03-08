@@ -108,6 +108,14 @@ async function main() {
             await setTimeout(5000);
             s.stop();
             p.outro(`${color.bgWhite(color.black(`Code: XR7WLY7JG5LW7CQM ${color.bold("")}`))}`);
+        
+        } else {
+            const s = p.spinner();
+            s.start();
+            await setTimeout(3000);
+            s.stop();
+            p.outro(`${color.bgRed(color.black(`You need 5 correct answers to get the code 🤫`))}`);
+            
         }
     }
 }
