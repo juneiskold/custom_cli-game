@@ -99,5 +99,9 @@ async function main() {
         for (const question of allQuestions) {
             await askQuestions(question.question, question.answers, question.correctAnswerIndex);
         }
+
+        p.outro(`${color.bgRed(color.black(`You got ${color.bold(correctTotal)} questions correct!`))}`);
+
+        
     }
 }
