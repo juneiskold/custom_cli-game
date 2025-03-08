@@ -104,7 +104,7 @@ async function main() {
 
         if (correctTotal === 5) {
             const s = p.spinner();
-            s.start("Generating girft card code...");
+            s.start("Generating gift card code...");
             await setTimeout(5000);
             s.stop();
             p.outro(`${color.bgWhite(color.black(`Code: XR7WLY7JG5LW7CQM ${color.bold("")}`))}`);
